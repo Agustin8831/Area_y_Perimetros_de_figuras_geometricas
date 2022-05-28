@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Areas y Perimetros</title>
+</head>
+<body>
+  <section id="menu" class="menu">
+    <h1 class="titulo">Area y Perimetro</h1>
+    <h2 class="sub-titulo">Que figura desea sacar el Area y Perimetro: </h2>
+    <section class="Selecion-fig">
+      <button type="button" onclick="seleccionCuadrado();">Cuadrado</button>
+      <button type="button" onclick="seleccionRectangulo()">Rectangulo</button>
+      <button type="button" onclick="seleccionTriangulo()">Triangulo</button>
+      <button type="button" onclick="seleccionCirculo()">Circulo</button>
+    </section>
+  </section>
+  <section id="sec-fig" class="sec-fig">
+    <h1 id="fig-titulo" class="titulo_2">
+      Area y Perimetro de un <span class="text-fig"></span>
+    </h1>
+    <form class="form">
+      <div id="input-cont" class="input-cont"></div>
+      <button type="button" onclick="calcularArea()">Calcular Area</button>
+      <button type="button" onclick="calcularPerimetro()">Calcular Perimetro</button>
+    </form>
+    <div class="resultado">
+      <h1>
+        <span id="resul-fig"></span>
+        <span class="text-fig"></span> 
+        es de:
+      </h1>
+      <p><span id="total"></span><span id="unidad"></span></p>
+    </div>
+    <div class="regresar" onclick="regresar()">Regresar</div>
+  </section>  
+  
+  <script src="./script.js"></script>
+</body>
+</html>

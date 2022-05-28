@@ -1,0 +1,158 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: rgb(255, 174, 0);
+  font-family: Arial, Helvetica, sans-serif; 
+  position: relative;
+  overflow: hidden; 
+}
+.regresar {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  padding: 10px 15px;
+  color: rgb(235, 235, 235);
+  background-color: rgb(202, 115, 0);
+  z-index: 1;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.082);
+}
+.menu {
+  background-color: rgb(235, 235, 235);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px 20px;
+  position: relative;  
+}
+.titulo {
+  font-size: 3.5rem;
+  font-weight: 800;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.199);
+  margin-bottom: 2rem;
+}
+.sub-titulo {      
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.199);
+  margin-bottom: 2rem;
+}
+.Selecion-fig {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.Selecion-fig button {
+  width: 70%;
+  max-width: 800px;
+  height: 60px;
+  font-size: 1rem;
+  font-weight: 800;
+  color: rgb(138, 138, 138);
+}
+/* --------------------- */
+.sec-fig {
+  width: 100%;
+  padding:  0 20px;
+  min-height: 100vh;
+  background-color: rgb(70, 69, 69);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+}
+.titulo_2 {
+  font-size: 3rem;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.199);
+  margin-bottom: 2rem;
+}
+.ingresar {
+  font-size: 1.5rem;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.199);
+  margin-bottom: 1rem;
+  display: block;
+}
+.form{
+  width: 100%;
+}
+.input-cont {
+  width: 100%;
+  padding:  0 100px;
+}
+.sec-fig input {
+  width: 100%;
+  max-width: 1000px;
+  height: 45px;
+  padding: 0 20px;
+  outline: none;
+  border: none;
+  font-weight: 600;
+  color: rgb(70, 69, 69);
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  margin-bottom: 1rem;
+}
+.sec-fig button {
+  width: 200px;
+  height: 40px;
+  font-size: 1rem;
+  font-weight: 800;
+  color: rgb(138, 138, 138);
+  border: none;
+  border-radius: 2px;
+}
+.resultado {
+  margin-top: 2rem;
+  display: none;
+}
+
+@media screen and (max-width: 550px) {
+  .titulo {
+    font-size: 2.5rem;
+  }
+  .sub-titulo {      
+    font-size: 1rem;
+  }
+  .Selecion-fig button {
+    height: 50px;
+    font-size: 1rem;
+  }
+  .input-cont {
+    padding:  0 20px;
+  }
+  .titulo_2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .ingresar {
+    font-size: 1rem;
+  }
+  .sec-fig input {
+    height: 35px;    
+  }
+  .sec-fig button {
+    width: auto;
+    height: 35px;
+    padding:  0 20px;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+  }
+}
